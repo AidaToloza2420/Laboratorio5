@@ -1,0 +1,322 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/Prelab5.o
+resVect CODE 0 0 0 3 2 1
+code CODE 0 0 0 214 2 1
+intVect CODE 0 0 0 12 2 1
+udata_bank0 BANK0 1 20 20 8 1 1
+udata_shr COMMON 1 70 70 2 1 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 28-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 28-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 214-1FFF 2
+ENTRY 214-1FFF 2
+IDLOC 2000-2003 2
+CODE 214-1FFF 2
+COMMON 72-7F 1
+EEDATA 2100-21FF 2
+STRCODE 214-1FFF 2
+STRING 214-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/Prelab5.o
+0 intVect CODE >68:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+4 intVect CODE >71:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+5 intVect CODE >72:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+6 intVect CODE >73:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+7 intVect CODE >76:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+8 intVect CODE >77:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+9 intVect CODE >78:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+B intVect CODE >80:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+C intVect CODE >81:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+D intVect CODE >83:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+E intVect CODE >84:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+F intVect CODE >85:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+10 intVect CODE >86:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+11 intVect CODE >87:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+0 resVect CODE >61:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+0 resVect CODE >64:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+2 resVect CODE >65:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+0 code CODE >91:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+100 code CODE >94:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+101 code CODE >95:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+102 code CODE >96:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+103 code CODE >97:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+104 code CODE >98:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+105 code CODE >99:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+107 code CODE >104:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+108 code CODE >105:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+109 code CODE >106:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+10A code CODE >110:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+10C code CODE >111:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+10D code CODE >112:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+10E code CODE >113:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+10F code CODE >114:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+110 code CODE >115:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+111 code CODE >119:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+113 code CODE >120:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+114 code CODE >121:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+115 code CODE >122:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+116 code CODE >123:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+117 code CODE >124:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+118 code CODE >125:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+11A code CODE >125:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+11B code CODE >125:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+11C code CODE >125:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+11D code CODE >126:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+11E code CODE >129:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+120 code CODE >130:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+121 code CODE >131:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+122 code CODE >133:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+124 code CODE >134:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+125 code CODE >135:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+126 code CODE >137:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+127 code CODE >138:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+128 code CODE >139:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+129 code CODE >141:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+12A code CODE >142:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+12B code CODE >143:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+12C code CODE >145:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+12E code CODE >146:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+12F code CODE >147:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+130 code CODE >148:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+131 code CODE >149:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+132 code CODE >150:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+133 code CODE >151:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+134 code CODE >152:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+135 code CODE >153:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+136 code CODE >155:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+137 code CODE >158:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+139 code CODE >159:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+13A code CODE >160:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+13B code CODE >161:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+13C code CODE >163:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+13D code CODE >164:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+13E code CODE >165:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+13F code CODE >168:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+141 code CODE >169:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+142 code CODE >170:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+143 code CODE >172:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+145 code CODE >173:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+146 code CODE >174:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+147 code CODE >175:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+148 code CODE >178:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+14A code CODE >179:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+14B code CODE >180:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+14C code CODE >181:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+14D code CODE >182:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+14E code CODE >183:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+14F code CODE >184:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+150 code CODE >187:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+152 code CODE >187:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+153 code CODE >187:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+154 code CODE >187:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+155 code CODE >188:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+156 code CODE >190:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+157 code CODE >193:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+158 code CODE >194:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+159 code CODE >195:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+15A code CODE >197:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+15B code CODE >198:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+15C code CODE >199:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+15D code CODE >201:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+15E code CODE >202:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+15F code CODE >203:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+160 code CODE >204:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+161 code CODE >207:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+162 code CODE >208:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+163 code CODE >209:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+164 code CODE >210:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+165 code CODE >211:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+166 code CODE >212:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+167 code CODE >213:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+168 code CODE >214:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+169 code CODE >215:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+16A code CODE >218:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+16B code CODE >219:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+16C code CODE >220:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+16D code CODE >221:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+16E code CODE >222:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+16F code CODE >223:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+170 code CODE >226:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+171 code CODE >227:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+172 code CODE >228:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+173 code CODE >229:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+174 code CODE >230:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+175 code CODE >231:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+176 code CODE >234:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+177 code CODE >235:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+178 code CODE >236:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+179 code CODE >237:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+17A code CODE >238:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+17B code CODE >240:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+17C code CODE >244:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+17D code CODE >245:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+17E code CODE >246:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+17F code CODE >248:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+180 code CODE >249:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+181 code CODE >250:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+182 code CODE >251:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+183 code CODE >252:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+184 code CODE >253:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+185 code CODE >255:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+186 code CODE >256:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+187 code CODE >258:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+188 code CODE >259:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+189 code CODE >260:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+18A code CODE >261:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+18B code CODE >266:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+18C code CODE >267:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+18D code CODE >268:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+18E code CODE >269:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+18F code CODE >271:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+190 code CODE >272:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+191 code CODE >274:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+192 code CODE >275:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+193 code CODE >276:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+194 code CODE >277:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+195 code CODE >282:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+196 code CODE >283:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+197 code CODE >284:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+198 code CODE >285:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+199 code CODE >287:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+19A code CODE >288:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+19B code CODE >290:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+19C code CODE >291:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+19D code CODE >292:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+19E code CODE >294:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+200 code CODE >296:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+201 code CODE >297:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+202 code CODE >298:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+203 code CODE >299:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+204 code CODE >300:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+205 code CODE >301:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+206 code CODE >302:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+207 code CODE >303:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+208 code CODE >304:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+209 code CODE >305:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+20A code CODE >306:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+20B code CODE >307:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+20C code CODE >308:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+20D code CODE >309:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+20E code CODE >310:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+20F code CODE >311:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+210 code CODE >312:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+211 code CODE >313:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+212 code CODE >314:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+213 code CODE >315:C:\Users\Aida Tolosa\MPLABXProjects\Lab5_Sim.X\Prelab5.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 214 0 ABS 0 - -
+__Hspace_1 72 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresVect 0 0 ABS 0 resVect -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 72 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 0 0 ABS 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__LintVect 0 0 ABS 0 intVect -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+__HintVect 0 0 ABS 0 intVect -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 8 1
+udata_shr 1 70 70 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
